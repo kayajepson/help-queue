@@ -3,8 +3,12 @@ import Header from './Header';
 import TicketList from './TicketList';
 
 function Apples(){
+  var mainStyles = {
+    display: 'contents'
+  }
+
   return (
-    <div>
+    <div style={mainStyles}>
       <Header/>
       <TicketList/>
     </div>

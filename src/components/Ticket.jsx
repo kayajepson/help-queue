@@ -6,9 +6,6 @@ function Ticket(props){
     display: 'flex',
     margin: '.5rem'
   }
-  var leftText = {
-    
-  }
   var locationStyle = {
     alignItems: 'flex-start',
     padding: '1rem'

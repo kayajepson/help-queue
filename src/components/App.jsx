@@ -4,6 +4,8 @@ import TicketList from './TicketList';
 import { Switch, Route } from 'react-router-dom';
 import NewTicketForm from './NewTicketForm';
 
+import MySampleComponent from './ImageLoaderComponentExample';
+
 function App(){
   return (
     <div>
@@ -12,6 +14,7 @@ function App(){
         <Route exact path='/' component={TicketList} />
         <Route path='/newticket' component={NewTicketForm} />
       </Switch>
+      <MySampleComponent/>
     </div>
   );
 }

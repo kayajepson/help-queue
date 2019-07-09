@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header(){
   var headerStyle = {
@@ -7,7 +8,6 @@ function Header(){
     backgroundColor: "orange",
     display: 'block',
     height: '100%',
-    // position: 'fixed',
     margin: '0'
   }
 
@@ -25,6 +25,7 @@ function Header(){
       `}
       </style>
       <h1 style={headerStyle}>Queue</h1>
+      <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link>
     </div>
   );
 }

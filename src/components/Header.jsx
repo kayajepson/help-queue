@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom';
 
 function Header(){
   var headerStyle = {
-    textAlign: "center",
-    color: "white",
-    backgroundColor: "orange",
+    textAlign: 'center',
+    color: 'white',
+    backgroundColor: 'orange',
     display: 'block',
     height: '100%',
     margin: '0'
-  }
+  };
 
   return (
     <div>
       <style jsx global>
-      {`
+        {`
       body, div#react-app-root {
         display: contents;
         position: fixed;

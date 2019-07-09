@@ -5,19 +5,19 @@ function Ticket(props){
   var ticketStyle = {
     display: 'flex',
     margin: '.5rem'
-  }
+  };
   var locationStyle = {
     alignItems: 'flex-start',
     padding: '1rem'
-  }
+  };
   var namesStyle = {
     alignItems: 'flex-start',
     padding: '1rem'
-  }
+  };
   var issueStyle = {
     marginLeft: 'auto',
     padding: '1rem'
-  }
+  };
   return (
     <div style={ticketStyle}>
       <style jsx>{`

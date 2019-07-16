@@ -14,15 +14,13 @@ function NewTicketForm(props){
     event.preventDefault();
     const action = {
       type: 'ADD_TICKET',
-      id: null,
+      id: v4(),
       names: _names.value,
       location: _location.value,
       issue: _issue.value,
       timeOpen: new Moment()
     };
     dispatch(action);
-    // this calls handleAddingNewTicketToList() from App to add the new ticket to the master list
-    props.onNewTicketCreation({names: _names.value, location: _location.value, issue: _issue.value, id: v4(), timeOpen: new Moment()});
     _names.value = '';
     _location.value = '';
     _issue.value = '';
@@ -50,10 +48,6 @@ function NewTicketForm(props){
     </div>
   );
 }
-
-NewTicketForm.propTypes = {
-  onNewTicketCreation: PropTypes.func
-};
 
 // These 2 lines are the same as the one below
 // NewTicketForm = connect()(NewTicketForm);
